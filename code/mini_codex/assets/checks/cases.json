@@ -1,0 +1,7 @@
+[
+  {"id":"status-done","red":true,"input":{"tasks":[{"id":1,"status":"todo"},{"id":2,"status":"done"}],"status":"done"},"expected":[{"id":2,"status":"done"}]},
+  {"id":"status-todo","red":true,"input":{"tasks":[{"id":1,"status":"todo"},{"id":2,"status":"done"}],"status":"todo"},"expected":[{"id":1,"status":"todo"}]},
+  {"id":"all-control","red":false,"input":{"tasks":[{"id":1,"status":"todo"},{"id":2,"status":"done"}]},"expected":[{"id":1,"status":"todo"},{"id":2,"status":"done"}]},
+  {"id":"missing-control","red":false,"input":{"tasks":[{"id":1,"status":"todo"}],"status":"missing"},"expected":[]},
+  {"id":"empty-control","red":false,"input":{"tasks":[],"status":"done"},"expected":[]}
+]

@@ -1,0 +1,25 @@
+# The public project contains the textbook, its final implementation and README.
+/*
+!/README.md
+!/notebooks/
+!/code/
+!/.gitignore
+!/.gitattributes
+
+# Local authoring material is retained outside the published tree.
+/notebooks/_examples/
+/notebooks/_support.py
+
+# Credentials and generated files never belong to the textbook.
+.env
+.env.*
+!/code/.env.example
+**/__pycache__/
+*.py[cod]
+**/.ipynb_checkpoints/
+**/.venv/
+**/*.egg-info/
+**/build/
+**/dist/
+*.log
+.DS_Store
